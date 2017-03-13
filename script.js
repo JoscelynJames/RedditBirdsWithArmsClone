@@ -14,8 +14,20 @@ $(document).ready(function() {
       titles.push(data.data.children[i].data.title);
       authors.push(data.data.children[i].data.author);
       thumbnails.push(data.data.children[i].data.thumbnail);
-
     }
-    console.log(urls);
+      for(var i = 0; i < thumbnails.length; i++) {
+        $("ul").append( "<li><img src= thumbnails[i]/></li>", thumbnails[i]);
+
+      }
+
+
+    /*
+      1. create another for loop that goes through any of the arrays length (because
+      they're all the same length)
+
+      2. Inside that for loop append a <li> to <ul>
+      3. Then append the content you want inside the <li>
+      4. Style it
+    */
   });
 });
