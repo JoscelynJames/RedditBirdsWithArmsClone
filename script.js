@@ -10,17 +10,23 @@ $(document).ready(function() {
     var childrenLength = data.data.children.length;
 
     for(var i = 0; i < childrenLength; i++) {
-      urls.push(data.data.children[i].data.url);
+      urls.push(data.data.children[i].data.permalink);
       titles.push(data.data.children[i].data.title);
       authors.push(data.data.children[i].data.author);
       thumbnails.push(data.data.children[i].data.thumbnail);
     }
-      for(var i = 0; i < thumbnails.length; i++) {
-        $("ul").append( "<li><img src= thumbnails[i]/></li>", thumbnails[i]);
+      for(var i = 1; i < thumbnails.length; i++) {
+        $("ul").append(
+          '<li class="reddit-li">' + i + '<img class="reddit-img" src=' + " ' " +  thumbnails[i] + " ' " +
+          '/><a class="reddit-a" href=' + "'http://www.reddit.com" + urls[i] + " ' " +
+          '>' + titles[i] + '</a> by ' + authors[i] + '</li>'
+        );
 
       }
 
-
+//       for (var i = 1; i < titles.length; i++) {
+//         $("ul").append("<li></li>", titles[i])
+// }
     /*
       1. create another for loop that goes through any of the arrays length (because
       they're all the same length)
