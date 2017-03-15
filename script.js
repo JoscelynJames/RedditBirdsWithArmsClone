@@ -6,6 +6,7 @@ $(document).ready(function() {
     var titles = [];
     var authors = [];
     var thumbnails = [];
+    var ups = []
 
     var childrenLength = data.data.children.length;
 
@@ -14,12 +15,14 @@ $(document).ready(function() {
       titles.push(data.data.children[i].data.title);
       authors.push(data.data.children[i].data.author);
       thumbnails.push(data.data.children[i].data.thumbnail);
+      ups.push(data.data.children[i].data.ups)
     }
       for(var i = 1; i < thumbnails.length; i++) {
         $("ul").append(
-          '<li class="reddit-li">' + i + '<img class="reddit-img" src=' + " ' " +  thumbnails[i] + " ' " +
-          '/><a class="reddit-a" href=' + "'http://www.reddit.com" + urls[i] + " ' " +
-          '>' + titles[i] + '</a> by ' + authors[i] + '</li>'
+          '<li class="reddit-li"><div class="thumb-numbers">   +    ' + "  " +  ups[i] + "    -    "     +   i   +
+          '.</div><img class="reddit-img" src=' + " ' " +  thumbnails[i] + " ' " +
+          '/><a class="reddit-a" href= ' + " 'http://www.reddit.com" + urls[i] + " ' " +
+          '>' + titles[i] + '</a> <span class="by-authors"> by ' + authors[i] + '<span/> </li>'
         );
 
       }

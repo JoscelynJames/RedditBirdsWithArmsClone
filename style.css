@@ -1,24 +1,50 @@
 #topheading {
+  position: relative;
+  font-size: 50px;
   text-align: center;
+  border-color: grey;
+  border-style: inset;
+  border-width: 8px;
 }
 
 ul {
   list-style-type: none;
-  display: inline-table;
+
+}
+
+.thumb-numbers {
+  color: red;
+  position: relative;
+  top: 120px;
+  width: 10px;
+  text-align: center;
+  
+
 }
 
 .reddit-img {
-  height: 70px;
-  width: 70px;
-  padding: 20px;
+  height: 90px;
+  width: 90px;
+  padding: 30px;
+  margin: 20px;
+  position: sticky;
+
 }
 
 .reddit-li {
-  background-color: red;
+  height: 100px;
+  width: 800px;
   margin: 15px;
-  text-align: center;
+  position: static;
 }
 
 .reddit-a {
+  position: relative;
+  bottom: 110px;
 
+}
+
+.by-authors {
+  position: relative;
+  bottom: 110px;
 }
