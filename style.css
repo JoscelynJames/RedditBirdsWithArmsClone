@@ -12,14 +12,19 @@ ul {
 
 }
 
-.thumb-numbers {
+.thumb-ups {
   color: red;
   position: relative;
   top: 120px;
   width: 10px;
   text-align: center;
-  
 
+}
+
+.numbers {
+  background-color: blue;
+  height: 20px;
+  width: 20px;
 }
 
 .reddit-img {
