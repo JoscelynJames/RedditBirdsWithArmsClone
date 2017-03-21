@@ -19,8 +19,8 @@ $(document).ready(function() {
     }
       for(var i = 1; i < thumbnails.length; i++) {
         $("ul").append(
-          '<li class="reddit-li"><div class="thumb-ups">   +    '  +  ups[i] + "    -   </div> <div>"   +   i   +
-          '.</div class="numbers"> <img class="reddit-img" src=' + " ' " +  thumbnails[i] + " ' " +
+          '<li class="reddit-li"><div class="thumb-ups">   +    '  +  ups[i] + "    -   </div> <div class='numbers'>"   +   i   +
+          '.</div> <img class="reddit-img" src=' + " ' " +  thumbnails[i] + " ' " +
           '/><a class="reddit-a" href= ' + " 'http://www.reddit.com" + urls[i] + " ' " +
           '>' + titles[i] + '</a> <span class="by-authors"> by ' + authors[i] + '<span/> </li>'
         );

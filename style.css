@@ -1,3 +1,6 @@
+body {
+  background-color: #eaeffa;
+}
 #topheading {
   position: relative;
   font-size: 50px;
@@ -9,20 +12,23 @@
 
 ul {
   list-style-type: none;
+  margin-top: 100px;
 
 }
 
 .thumb-ups {
   color: red;
   position: relative;
-  top: 120px;
+  top: 30px;
   width: 10px;
+  left: 20px;
+  margin-right: 20px
   text-align: center;
 
 }
 
 .numbers {
-  background-color: blue;
+  position: static;
   height: 20px;
   width: 20px;
 }
@@ -30,9 +36,10 @@ ul {
 .reddit-img {
   height: 90px;
   width: 90px;
-  padding: 30px;
-  margin: 20px;
-  position: sticky;
+  padding: 20px;
+  margin: 30px;
+  margin-left: 40px;
+  position: inherit;
 
 }
 
@@ -41,6 +48,7 @@ ul {
   width: 800px;
   margin: 15px;
   position: static;
+  background-color: #adc2eb;
 }
 
 .reddit-a {
