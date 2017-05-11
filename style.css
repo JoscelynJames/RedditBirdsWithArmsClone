@@ -10,5 +10,5 @@ body {
   height: 140px;
   width: 140px;
   position: relative;
-
+  box-shadow: 5px 5px #bdbdbd;
 }
