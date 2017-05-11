@@ -9,6 +9,6 @@ body {
 .reddit-img {
   height: 140px;
   width: 140px;
-  position: relative;
+  position: static;
   box-shadow: 5px 5px #bdbdbd;
 }
