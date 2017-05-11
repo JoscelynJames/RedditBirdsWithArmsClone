@@ -16,13 +16,16 @@ $(document).ready(function() {
       authors.push(data.data.children[i].data.author);
       thumbnails.push(data.data.children[i].data.thumbnail);
     }
-      for(var i = 0; i < thumbnails.length; i++) {
-        $('ul').eq(i).append('<li>')
-          $('li').append( i + '.<img src=' + " ' " +  thumbnails[i] + " />" +
-          '<a class="bird-image" href= ' + " 'http://www.reddit.com" + urls[i] + " ' " + '>' +
-          'titles[i] + </a> <span> by ' + authors[i] + '<span/> </li>');
+    for(var i = 1; i < thumbnails.length; i++) {
+      $('ul').eq(i).append(
+       '<div class="row"> <div class="col s1">' + i +
+       '.</div><div class="col s1"><img class="reddit-img" src=' + " ' " +  thumbnails[i] + " ' " +
+       '/></div><div class="col s1"> <a class="reddit-a" href= ' +
+       " 'http://www.reddit.com" + urls[i] + " ' " +'></div><div class="col s1">' +
+       titles[i] + '</a> <span class="by-authors"> by ' + authors[i] + '<span/></div>'
+      );
 
-      }
+    }
 
 //       for (var i = 1; i < titles.length; i++) {
 //         $("ul").append("<li></li>", titles[i])

@@ -1,1 +1,14 @@
+body {
+    background-color: #eeeeee;
+}
 
+.nav-wrapper {
+  background-color: #d4e157;
+}
+
+.reddit-img {
+  height: 140px;
+  width: 140px;
+  position: relative;
+
+}
