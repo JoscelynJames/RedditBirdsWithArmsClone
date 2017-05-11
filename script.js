@@ -15,15 +15,12 @@ $(document).ready(function() {
       titles.push(data.data.children[i].data.title);
       authors.push(data.data.children[i].data.author);
       thumbnails.push(data.data.children[i].data.thumbnail);
-      ups.push(data.data.children[i].data.ups)
     }
-      for(var i = 1; i < thumbnails.length; i++) {
-        $("ul").append(
-          '<li class="reddit-li"><div class="thumb-ups">   +    '  +  ups[i] + "    -   </div> <div class='numbers'>"   +   i   +
-          '.</div> <img class="reddit-img" src=' + " ' " +  thumbnails[i] + " ' " +
-          '/><a class="reddit-a" href= ' + " 'http://www.reddit.com" + urls[i] + " ' " +
-          '>' + titles[i] + '</a> <span class="by-authors"> by ' + authors[i] + '<span/> </li>'
-        );
+      for(var i = 0; i < thumbnails.length; i++) {
+        $('ul').eq(i).append('<li>')
+          $('li').append( i + '.<img src=' + " ' " +  thumbnails[i] + " />" +
+          '<a class="bird-image" href= ' + " 'http://www.reddit.com" + urls[i] + " ' " + '>' +
+          'titles[i] + </a> <span> by ' + authors[i] + '<span/> </li>');
 
       }
 
