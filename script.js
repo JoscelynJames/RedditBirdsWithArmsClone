@@ -16,14 +16,17 @@ $(document).ready(function() {
       authors.push(data.data.children[i].data.author);
       thumbnails.push(data.data.children[i].data.thumbnail);
     }
+
     for(var i = 1; i < thumbnails.length; i++) {
       $('ul').append(
-       '<li><div class="section"> <div class="col s12">' + i +
-       '.</div><div class="col s12"><img class="reddit-img" src=' + " ' " +  thumbnails[i] + " ' " +
-       '/></div><div class="col s12"> <a class="reddit-a" href= ' +
+       '<div class="row">   <div class="col s1">' + i +
+       '.</div>     <div class="col s3">  <img class="reddit-img" src=' +
+       " ' " +  thumbnails[i] + " ' " +
+       '/>  </div>   <div class="col s6"> <a class="reddit-a" href= ' +
        " 'http://www.reddit.com" + urls[i] + " ' " +'>' +
-       titles[i] + '</a> <span class="by-authors"> by ' + authors[i] + '<span/></div></li>'
+       titles[i] + '</a> <span class="by-authors"> by ' + authors[i] + '<span/>  </div>  </div>'
       );
     }
+
   });
 });
