@@ -17,3 +17,35 @@ body {
     font-family: 'Able', sans-serif;
     font-size: 20px
 }
+
+.left-container {
+  height: 50em;
+  background-color: #91972A;
+}
+
+.right-container {
+  height: 50em;
+  overflow: scroll;
+}
+
+#fact-button {
+  background-color: #8FBB99;
+}
+
+@media (max-width: 664px) {
+  .reddit-img {
+    height: 100px;
+    width: 100px;
+    position: static;4
+    box-shadow: 5px 5px #bdbdbd;
+  }
+}
+
+@media (max-width: 375px) {
+  .reddit-img {
+    height: 70px;
+    width: 70px;
+    position: static;4
+    box-shadow: 5px 5px #bdbdbd;
+  }
+}
