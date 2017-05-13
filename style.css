@@ -9,10 +9,11 @@ body {
 .reddit-img {
   height: 140px;
   width: 140px;
-  position: static;
+  position: static;4
   box-shadow: 5px 5px #bdbdbd;
 }
 
-.col {
-  
+.by-authors {
+    font-family: 'Able', sans-serif;
+    font-size: 20px
 }
